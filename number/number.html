@@ -5,10 +5,8 @@
     <title>잠시만 기다려주세요</title>
     <script>
         let url = location.href.split("?")[1];
-        if(url.split('=')[0]==="num"){
-            alert(url.split('=')[1]);
+        if(url.split('=')[0]==="num")
             location.href=('tel:'+url.split('=')[1]);
-        }
     </script>
 </head>
 <body>
