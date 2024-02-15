@@ -1,12 +1,185 @@
 <!DOCTYPE html>
+<html lang="ko">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김노트(note11g, 김소연)</title>
 </head>
+
 <body>
-    <a href="https://github.com/note11g" target="_blank" rel="noopener noreferrer">Github</a>
-    <br/>
-    <a href="https://drive.google.com/file/d/1hp_FEj0VFzpN9Y6oknFSL2Kj9gJSMK9f/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-    <br/>
-    <a href="https://www.linkedin.com/in/%EC%86%8C%EC%97%B0-%EA%B9%80-415368270" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <main>
+        <div class="intro">
+            <div class="name">
+                <h1>김소연</h1>
+                <span>(김노트)</span>
+            </div>
+            <p class="desc-large">
+                고객의 문제를 최우선으로 생각하는 소프트웨어 엔지니어 김소연입니다.<br />
+                주로 모바일 애플리케이션 서비스 개발을 담당했습니다.<br />
+                비즈니스로 고객에게, 더 나아가 세상에 가치를 전달하는 일을 한다는 것에 보람을 느낍니다.<br/>개발할 때에는 고객이 원하는 것을 빠르게 맞춰나갈 수 있도록 유연한 코드를 작성하려
+                노력합니다.
+            </p>
+            <div class="other-infos">
+                <div class="other-info email">
+                    <img height="16" src="./icons/mail-14-icon.svg" />
+                    <a href="mailto:yourmate04@gmail.com">yourmate04@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="action-button-grid">
+            <action-button to="https://github.com/note11g" icon="./icons/github-icon.svg">
+                Github
+            </action-button>
+            <action-button to="https://www.linkedin.com/in/%EC%86%8C%EC%97%B0-%EA%B9%80-415368270"
+                icon="./icons/linkedin-icon.svg">
+                LinkedIn
+            </action-button>
+            <action-button to="https://drive.google.com/file/d/1_SLF_7XUhtLg9_6IK2SDGM4PAao2iFQT/view?usp=sharing"
+                icon="./icons/cv-icon.svg">
+                Resume (국문, 공개용)
+            </action-button>
+        </div>
+    </main>
+    <style>
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            align-self: stretch;
+        }
+
+        .action-button-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.625rem;
+            align-self: stretch;
+        }
+
+        action-button:last-child:nth-child(odd) {
+            grid-column: span 2;
+        }
+
+        .action-button {
+            color: black;
+            background-color: white;
+            border-radius: 9999px;
+            border: 1px solid #E3E3E3;
+            text-decoration: none;
+            display: flex;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+            flex: 1 0 0;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .desc-large {
+            font-size: 0.825rem;
+        }
+
+        .name {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .other-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.375rem;
+            font-size: 0.75rem;
+        }
+
+        p {
+            margin: 0.25rem 0;
+        }
+
+        a {
+            color: black;
+        }
+
+        h1 {
+            font-weight: 600;
+            display: inline;
+            margin: 0.5rem 0;
+        }
+
+        main {
+            display: flex;
+            padding: 3rem 1rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            max-width: 768px;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #F6F6F6;
+            margin: 0;
+            line-height: 125%;
+            letter-spacing: -0.04em;
+            font-family: Interop, "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", 나눔고딕, "Nanum Gothic", "Malgun Gothic", "맑은 고딕", apple-system, BlinkMacSystemFont;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @font-face {
+            font-family: 'Interop';
+            src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Medium.woff2') format('woff2'),
+                url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: 'Interop';
+            src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2') format('woff2'),
+                url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: 'Interop';
+            src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-SemiBold.woff2') format('woff2'),
+                url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script>
+        class ActionButtonElement extends HTMLElement {
+            connectedCallback() {
+                const link = this.getAttribute("to");
+                const iconPath = this.getAttribute("icon");
+                this.innerHTML = `<a href="${link}" class="action-button">
+                    <img src="${iconPath}" style="height: 1.25rem;"/>
+                    <span style="width: 100%;">${this.innerHTML}</span>
+                    →
+                </a>`
+            }
+        }
+        customElements.define("action-button", ActionButtonElement);
+    </script>
 </body>
+
 </html>
