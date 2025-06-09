@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김소연(note11g, 김노트)</title>
+    <title>Soyeon Kim (김소연)</title>
     <meta property="og:description" content="Resume, Github and more">
 </head>
 
@@ -12,20 +12,25 @@
     <main>
         <div class="intro">
             <div class="name">
-                <h1>김소연</h1>
-                <span>(김노트)</span>
+                <h1>Soyeon Kim</h1>
+                <span>김소연</span>
             </div>
             <p class="desc-large">
-                고객의 문제를 최우선으로 생각하는 소프트웨어 엔지니어 김소연입니다.<br />
-                주로 모바일 애플리케이션 엔지니어링을 담당했습니다.<br />
-                비즈니스로 고객에게, 더 나아가 세상에 가치를 전달하는 일을 한다는 것에 보람을 느끼며,
-                고객이 원하는 것을 빠르게 맞춰나갈 수 있도록 수정에 유연한 코드를 작성하려 노력합니다.<br />
-                나의 지식이나, 경험을 공유하는 것에도 관심이 많습니다.
+                Software Engineer(Mobile/Web Front-end) / Product Manager
             </p>
+            <ul class="desc-large">
+                <li>Launched and maintained 10+ mobile applications.</li>
+                <li>Commit to solving problems effectively across any tools or technologies.</li>
+                <li>Writing flexible, easily modifiable code.</li>
+            </ul>
             <div class="other-infos">
                 <div class="other-info email">
-                    <img height="16" src="./icons/mail-14-icon.svg" />
+                    <img height="16" src="./icons/mail-16-icon.svg" />
                     <a href="mailto:yourmate04@gmail.com">yourmate04@gmail.com</a>
+                </div>
+                <div class="other-info">
+                    <img height="16" src="./icons/map-pin-16-icon.svg" />
+                    <span>Seoul, Korea</span>
                 </div>
             </div>
         </div>
@@ -86,18 +91,31 @@
             font-size: 0.825rem;
         }
 
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+        }
+
         .name {
             display: flex;
             align-items: baseline;
+            gap: 0.65rem;
+            margin: 0.125rem 0;
+        }
+
+        .other-infos {
+            display: flex;
             gap: 0.5rem;
         }
 
         .other-info {
-            display: flex;
+            display: inline-flex;
             justify-content: center;
             align-items: center;
             gap: 0.375rem;
             font-size: 0.75rem;
+            margin: 0.25rem 0;
         }
 
         p {
@@ -120,7 +138,9 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 1rem;
+            width: 100%;
             max-width: 768px;
+            box-sizing: border-box;
         }
 
         body {
